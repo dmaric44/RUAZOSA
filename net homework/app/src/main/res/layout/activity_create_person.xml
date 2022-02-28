@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreatePersonActivity">
+
+    <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="First name"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="44dp" />
+
+    <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Last name"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/firstNameEditText"
+            tools:layout_editor_absoluteX="47dp" />
+
+    <EditText
+            android:id="@+id/roomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Room"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/lastNameEditText"
+            tools:layout_editor_absoluteX="103dp" />
+
+    <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Phone number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/roomEditText"
+            tools:layout_editor_absoluteX="65dp" />
+
+    <Button
+            android:id="@+id/createNewPersonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Create person"
+            app:layout_constraintTop_toBottomOf="@+id/phoneEditText"
+            tools:layout_editor_absoluteX="152dp" />
+</android.support.constraint.ConstraintLayout>
